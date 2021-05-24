@@ -1,5 +1,5 @@
 <h1>Clone-netflix</h1>
-<h2>Desafio do Bootcamp 'HTML Web Developer' da Digital Innovation One</h2>
+<h4>Desafio do Bootcamp 'HTML Web Developer' da Digital Innovation One</h4>
 
 ## Project setup
 ```
