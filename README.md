@@ -1,4 +1,5 @@
-# clone-netflix
+<h1>Projeto clone-netflix</h1>
+<h2>Desafio proposto pelo BootCamp da DIO</h2>
 
 ## Project setup
 ```
