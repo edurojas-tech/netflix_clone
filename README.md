@@ -1,7 +1,11 @@
 <h1>Clone-netflix</h1>
 <h4>Desafio do Bootcamp 'HTML Web Developer' da Digital Innovation One</h4>
+<hr>
+<p>
+    Projeto realizado com Vue.js e Bulma CSS
+</p>
 
-## Project setup
+<!-- ## Project setup
 ```
 npm install
 ```
@@ -22,4 +26,4 @@ npm run lint
 ```
 
 ### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+See [Configuration Reference](https://cli.vuejs.org/config/). -->
