@@ -7,31 +7,32 @@
       style="background-color: rgba(0, 0, 0, 0.7);"
     >
       <div class="navbar-brand">
-        <a class="navbar-item" href="https://bulma.io">
-          <img
-            src="~/../assets/img/logoNetflix.svg"
-            alt="netflixLogo"
-          />
-        </a>
+        <linkPage
+          rota="/home"
+          estilo="margin-left: 40px; margin-top: 10px; width: 200px"
+          imagem="/img/logoNetflix.6dbba458.svg"
+        ></linkPage>
       </div>
     </nav>
     <section id="cardLogin" style="background-color: rgba(0, 0, 0, 0.7);">
-      <h1 class="title" style="color: white;">Login</h1>
+      <cardProfile></cardProfile>
     </section>
-    <!-- <h1 class="title mt-5">tela login</h1>
-        <router-link to="/home" class="button is-link">
-            To go home
-        </router-link> -->
   </div>
 </template>
 <script>
+import cardProfile from "../components/cardProfile.vue";
+import linkPage from "../components/linkPage.vue";
 export default {
-  name: "login",
+    name: "login",
+    components: {
+        cardProfile,
+        linkPage,
+    },
 };
 </script>
 <style scoped>
 #login {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,7 +41,7 @@ export default {
 }
 
 #cardLogin {
-  border: 3px solid red;
+  /* border: 3px solid red; */
   height: 100vh;
   display: flex;
   flex-direction: column;
