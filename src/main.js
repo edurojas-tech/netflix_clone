@@ -1,8 +1,25 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App.vue";
+import VueRouter from "vue-router";
 
-Vue.config.productionTip = false
+// importando as paginas
+import login from "./pages/login.vue";
+import home from "./pages/home.vue";
+
+Vue.config.productionTip = false;
+Vue.use(VueRouter);
+
+//Configuração das Rotas
+const router = new VueRouter({
+  mode: "history",
+  routes: [
+    { path: "/login", component: login },
+    { path: "/home", component: home },
+    { path: "/", redirect: "/home" },
+  ],
+});
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  router,
+  render: (h) => h(App),
+}).$mount("#app");
