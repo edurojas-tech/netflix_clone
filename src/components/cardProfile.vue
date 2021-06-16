@@ -1,13 +1,13 @@
 <template>
   <div id="cardProfile">
     <div>
-        <h1 style="text-align: left">Entrar</h1>
-        <form action="" method="POST" class="form-group" style="text-align: left">
-            <input
-            type="email"
-            placeholder="Email ou Número de telefone"
-            class="control"
-            />
+      <h1 style="text-align: left">Entrar</h1>
+      <form action="" method="POST" class="form-group" style="text-align: left">
+        <input
+          type="email"
+          placeholder="Email ou Número de telefone"
+          class="control"
+        />
         <input type="password" placeholder="Senha" class="control" />
       </form>
     </div>
