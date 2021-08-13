@@ -3,8 +3,9 @@
     <router-link
       :class="classe"
       :to="rota"
+      :style="estilo"
     >
-      <img :src="imagem" :style="estilo">
+      <img :src="imagem" :style="estilo" v-show="stado">
       {{descricao}}
     </router-link>
   </div>
@@ -17,7 +18,8 @@ export default {
       estilo : String,
       imagem : String,
       descricao: String,
-      classe: String
+      classe: String,
+      stado: Boolean
     }
 }
 </script>

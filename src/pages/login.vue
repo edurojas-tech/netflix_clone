@@ -11,11 +11,12 @@
           rota="/home"
           estilo="margin-left: 40px; margin-top: 10px; width: 200px"
           imagem="/img/logoNetflix.6dbba458.svg"
+          :stado=true
         ></linkPage>
       </div>
     </nav>
     <section id="cardLogin">
-      <cardProfile class="elementologin"></cardProfile>
+      <cardLogin class="elementologin"></cardLogin>
     </section>
     <section class="rodape">
       <rodape/>
@@ -23,13 +24,13 @@
   </div>
 </template>
 <script>
-import cardProfile from "../components/cardProfile.vue";
+import cardLogin from "../components/cardLogin.vue";
 import linkPage from "../components/linkPage.vue";
 import rodape from "../components/rodape.vue"
 export default {
     name: "login",
     components: {
-        cardProfile,
+        cardLogin,
         linkPage,
         rodape
     },
@@ -56,8 +57,14 @@ export default {
 }
 
 .rodape{
- height: 300px;
- padding-top: 20px;
- background-color: rgba(0, 0, 0, 0.918);
+  height: 300px;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.918);
+}
+
+@media(max-width: 600px){
+  .rodape{
+    height: auto;
+  }
 }
 </style>
