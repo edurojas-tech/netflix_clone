@@ -19,6 +19,10 @@ const router = new VueRouter({
   ],
 });
 
+module.exports = {
+  mode: 'production'
+}
+
 new Vue({
   router,
   render: (h) => h(App),
